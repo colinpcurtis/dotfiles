@@ -1,0 +1,11 @@
+[user]
+	name = Colin Curtis
+	email = colinpcurtis826@ucla.edu
+[core]
+	autocrlf = input
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
